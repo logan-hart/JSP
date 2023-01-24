@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Futurism';
+    src: url('../../dist/fonts/Futurism.otf') format('woff2');
+  }
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-image: url('../../images/blueGradient.jpg');
+    background-size: cover;
+    font-family: 'Futurism';
+}
+
+#title{
+    position: fixed;
+    font-family: "Futurism";
+    left: 37%;
+    top: -10%;
+    transform: translateX(-50%);
+    width: 88%;
+    z-index: 11;
+    pointer-events: none;
+}
+   
+h1{
+    font-size: 6vw;
+    color: white;
+    text-shadow: 3px 3px 10px rgb(88 88 88);
+    pointer-events: none;
+}
+
+div {
+    width: auto;
+    height: fit-content;
+}
+
+canvas {
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, .2);
+}
+
+#animators {
+    position: relative;
+    top: 84%;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+
+#canvasdiv {    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 5px;
+    border: 1px solid white;
+    background-color: rgba(255,255,255, .2);
+    border-radius: 20px;
+    padding: 3px 25px;
+}
+
+#links{
+    position: fixed;
+    bottom: .4%;
+    left: 96%;
+    transform: translateX(-50%);
+
+}
+
+button img{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+}
+
+.linkimg{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 12px;
+}
+
+#legenddiv {
+    display: flex;
+    position: fixed;
+    top: 0%;
+    height: 99%;
+    width: 20%;
+}
+
+#legendtxt {
+    font-size: 34px;;
+    color: white;
+    position: fixed;
+    top: 37%;
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.legend{
+    position: fixed;
+    display: inline;
+    font-family:  Courier New;
+    font-size: 20px;
+    color: black;
+}
+
+#legendkeys{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 30%;
+    left: 13%;
+}
+
+.hex{
+    font-size: 50px;
+}
+
+#legendstart{
+    top: 33.5%;
+    left: 27.5%;
+}
+
+#legenddiv{
+    position: fixed;
+    top: 0%;
+    width: 20%;
+    height: 99.35%;
+    background-color: rgba(0,0,0, .3);
+}
+
+#navdiv{
+    height: 17%;
+    width: 80%;
+    position: fixed;
+    bottom: .4%;
+    right: 0%;
+    background-color: rgba(0,0,0, 0.1)
+}
+
+#legendcanvas{
+    box-shadow: none;
+    position: fixed;
+    top: 43%;
+    left: 3.8%;
+}
+
+#start{
+    font-size: inherit;
+    left: 7%;
+    top: 49%;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: fixed;
+}
+
+#end{
+    font-size: inherit;
+    left: 7%;
+    top: 43.5%;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: fixed;
+}
